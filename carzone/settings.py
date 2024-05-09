@@ -81,6 +81,18 @@ DATABASES = {
     }
 }
 
+# DATABASES = {
+#      'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'carzone_bd',
+#         'USER': 'postgres',
+#         'PASSWORD': '123456789',
+#         'HOST': 'localhost',
+#         'PORT': '5432',
+#     }
+# }
+
+
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
@@ -123,3 +135,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATICFILES_DIRS =[
     os.path.join(BASE_DIR, 'carzone/static'),
 ]
+
+#Media settings
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
